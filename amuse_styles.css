@@ -1,0 +1,231 @@
+
+/*
+Due Novemeber 13th
+Assignment #4
+Joseph Berrigan
+*/
+html{
+  background-color: #a0a0bf;
+
+}
+
+#wrapper{
+  margin: 20px;
+  font-family: "OCR A Std", FreeMono, "Andale Mono", monospace;
+  padding: 20px 80px;
+  border-radius: 40px;
+  background-color: #0f888f;
+}
+
+header{
+  text-align: center;
+  padding-bottom: 2px;
+  border-radius: 35px;
+  background: #b572D4;
+  color: #251061;
+  margin-left: 20%;
+  margin-right: 20%;
+  border-bottom: 5px solid;
+  border-right: 3px solid;
+}
+header img{
+  margin: auto;
+  width: 100%;
+}
+
+nav{
+  margin-top: 10px;
+  padding: 15px;
+  background: #d9a8d2;
+  color: #251061;
+  border-radius: 35px;
+  border-bottom: 3px solid;
+  border-right: 1px solid;
+}
+
+main{
+  margin: 5px;
+  padding: 10px;
+  background: #729fd4;
+  color: #251061;
+  border-radius: 35px;
+  border-bottom: 6px solid;
+  border-right: 4px solid;
+}
+
+footer{
+  margin: 5px;
+  padding: 5px;
+  background: #99dea8;
+  color: #251061;
+  border-radius: 35px;
+  border-bottom: 3px solid;
+  border-right: 1px solid;
+}
+.one{
+  color: #b138d9;
+}
+.two{
+  color: #a635cc;
+}
+.three{
+  color: #912eb3;
+}
+.four{
+  color: #81299e;
+}
+.five{
+  color: #70248a;
+}
+.six{
+  color: #3e144d;
+}
+hr{
+  min-height: 6px;
+  border-color: pink;
+  background-color: pink;
+  border-radius: 10px;
+}
+nav a{
+  color: #098fff;
+  border-spacing: 5px;
+  border: solid  #b9fec8 5px;
+  border-radius: 5px;
+  background:  #b9fec8;
+  text-decoration: none;
+  box-shadow: 5px 3px #99dea8;
+}
+footer a{
+  color: green;
+}
+nav a:hover{
+  border: solid  #729fd4 5px;
+  background:  #729fd4;
+  box-shadow: 5px 3px #251061;
+  color: #d9ffe8;
+}
+main > ul > li{
+  list-style-type: square;
+}
+main img{
+  float: left;
+  margin: auto;
+  border-style: groove;
+  border-color: inherit;
+  border-width: thick;
+  width: 22%;
+
+  clear: left;
+}
+
+main h3{
+
+}
+main h3 img{
+  margin-right: 3%;
+  margin-left: 0.5%;
+  }
+main h3+p{
+  padding-bottom: 5%;
+  }
+  main br{
+    clear: both;
+  }
+  main::after {
+    clear: both;
+    content: "";
+    display: table;
+    padding-bottom: 1%;
+   }
+   main table{
+    margin: auto;
+    border-style: solid;
+    border-color: #000000;
+
+  }
+  table {
+    background-color: #99dea8;
+    color: #251061;
+    border-collapse: collapse;
+    width: 60%;
+
+
+  }
+tbody > tr:nth-child(odd){
+  background-color: #b572D4 ;
+  color: orange;
+}
+tbody tr:nth-child(even){
+  background-color: #d9a8d2;
+  color: #098fff;
+}
+table th{
+background-color: #99dea8;
+color: #251061;
+padding-top:  1%;
+padding-bottom: 1%;
+
+
+}
+table td{
+  text-align: center;
+  padding-top: 1% ;
+  padding-bottom: 1%;
+}
+caption{
+  text-align: right;
+  color: #81299e;
+}
+main form{
+
+  margin: 0% 3%;
+
+}
+fieldset{
+  
+  margin: .5%;
+  width: 95%;
+  background: #d9a8d2;
+  border-color: #99dea8;
+  border-style: solid;
+  border-width:  5px;
+  display: block;
+}
+legend{
+  background: #b572D4;;
+  border-color: #99dea8;
+  border-style: solid;
+  border-width:  2px;
+  padding: 6px;
+  margin: 1px;
+  border-radius: 50px;
+}
+form input#submit{
+  background: #b572D4;;
+  border-color: #99dea8;
+  border-style: outset;
+  border-width:  3px;
+  padding: 10px;
+  margin: auto;
+  border-radius: 50px;
+  display: block;
+}
+form input#submit:hover{
+  background: #b572D4;;
+  border-color: #99dea8;
+  border-style: inset;
+  border-width:  3px;
+  padding: 10px;
+  margin: auto;
+  border-radius: 50px;
+  display: block;
+}
+fieldset input{
+  clear:  both;
+  text-align:  center;
+
+}
+
+div.form{
+  margin: auto;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--
+Due Novemeber 13th
+Assignment #4
+Joseph Berrigan
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Berrigan: Assign 4</title>
+    <link rel="stylesheet" href="amuse_styles.css">
+  </head>
+  <body>
+    <div id="wrapper">
+    <header>
+      <img src="Area52Text.png" alt="Area 52" id="logo" onclick = "alert('Welcome to Area 52!')">
+      <h1>Hitch a ride out of this world!</h1>
+    </header>
+    <nav>
+
+        <a href="index.html">Home</a>
+        <a href="rides.html">Rides</a>
+        <a href="info.html">Info</a>
+        <a href="order.html">Order</a>
+        <a href="index.html#UpcomingEvents">Upcoming Events</a>
+        <a href="index.html#RelatedParkNews">Related Park News</a>
+    </nav>
+
+    <main>
+      <h2 class="one">Order Tickets</h2>
+
+      <form class="" action="formProcessor.html" method="get">
+        <div class="form">
+          <fieldset id="customerInfo">
+            <legend>Contact Information</legend>
+            <label for="name">Name</label>
+            <input type="text" name="name"  id="name">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" id="phone">
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" min="1" max="100">
+          </fieldset>
+          <fieldset id="totalCost">
+            <legend>Ticket Information</legend>
+            <label for="tickets">Number of Tickets</label>
+            <select  name="tickets" id="tickets">
+              <option label=" " value="zero"></option>
+              <option value="one">1</option>
+              <option value="two">2</option>
+              <option value="three">3</option>
+              <option value="four">4</option>
+              <option value="five">5</option>
+              <option value="six">6</option>
+              <option value="seven">7</option>
+            </select>
+            <label for="donation">Would you like to donate?</label>
+            1<input type="range" name="donation" id="donation" max="100" min="1" step="3" value="1">100
+            <label for="addon1">Meal Pass</label>
+            <input type="checkbox" name="addon1" value="Meal Pass" id="addon1">
+            <label for="addon2">Locker Rental</label>
+            <input type="checkbox" name="addon2" value="Locker Rental" id="addon2" checked>
+            <label for="addon3">Birthday</label>
+            <input type="checkbox" name="addon3" value="Birthday" id="addon3">
+            <label for="addon4">Parking Pass</label>
+            <input type="checkbox" name="addon4" value="Parking Pass" id="addon4" checked>
+          </fieldset>
+          <fieldset id="deliveryInfo">
+            <legend>Delivery</legend>
+            <label for="deliveryDate">Delivery Date</label>
+            <input type="date" name="deliveryDate" id="deliveryDate">
+            How would you like to recieve your tickets?
+            <label for="snail">Snail</label>
+            <input type="radio" name="deliveryMethod" value="Snail" id="snail">
+            <label for="horse">Horse</label>
+            <input type="radio" name="deliveryMethod" value="Horse" id="horse">
+            <label for="usps">USPS</label>
+            <input type="radio" name="deliveryMethod" value="USPS" id="usps">
+            <label for="fedex">FedEx</label>
+            <input type="radio" name="deliveryMethod" value="FedEx" id="fedex">
+            <label for="ups">UPS</label>
+            <input type="radio" name="deliveryMethod" value="UPS" id="ups">
+            <label for="hamster">Hamster</label>
+            <input type="radio" name="deliveryMethod" value="Hamster" id="hamster">
+            <label for="text">Text</label>
+            <input type="radio" name="deliveryMethod" value="Text" id="text">
+
+          </fieldset>
+          <input type="submit" name="submit" id="submit" onclick="orderTics()">
+
+
+          </div>
+      </form>
+    </main>
+    <footer>Copyright &#169; 9/18/2021 <a href="mailto:jb56206@georgiasouthern.edu">jb56206@georgiasouthern.edu</a></footer>
+    </div>
+    <script src = "amuse_scripts.js">
+    </script>
+  </body>
+</html>
