@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <!--
-Due Novemeber 13th
-Assignment #4
+Due Novemeber 29th
+Assignment #5
 Joseph Berrigan
 -->
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Berrigan: Assign 4</title>
+    <title>Berrigan: Assign 5</title>
     <link rel="stylesheet" href="amuse_styles.css">
   </head>
   <body>
@@ -29,7 +29,8 @@ Joseph Berrigan
     <main>
       <h2 class="one">Order Tickets</h2>
 
-      <form class="" action="formProcessor.html" method="get">
+      <form class="" action="formProcessor.html" method="get" id="contactForm">
+      <!--  onsubmit="return order();" -->
         <div class="form">
           <fieldset id="customerInfo">
             <legend>Contact Information</legend>
@@ -87,8 +88,7 @@ Joseph Berrigan
             <input type="radio" name="deliveryMethod" value="Text" id="text">
 
           </fieldset>
-          <input type="submit" name="submit" id="submit" onclick="orderTics()">
-
+          <input type="submit" name="submit" id="submit"  > <!-- onclick="orderTics()" -->
 
           </div>
       </form>
@@ -96,6 +96,10 @@ Joseph Berrigan
     <footer>Copyright &#169; 9/18/2021 <a href="mailto:jb56206@georgiasouthern.edu">jb56206@georgiasouthern.edu</a></footer>
     </div>
     <script src = "amuse_scripts.js">
+
     </script>
+  <script>
+    document.getElementById("submit").addEventListener("click", function(){order()}, false);
+  </script>
   </body>
 </html>
